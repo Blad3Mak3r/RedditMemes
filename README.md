@@ -24,7 +24,11 @@ git clone https://github.com/<YOUR_USERNAME_HERE>/RedditMemes.git
 cd RedditMemes
 npm install
 ```
-### **4.** Test the project.
+### **4.** Compile the project.
+```shell script
+npm run build
+```
+### **5.** Test the project.
 ```shell script
 npm run test
 ```

@@ -1,4 +1,4 @@
-import { getRandomMeme, getLocalRandomMeme } from '../src/index';
+import { getRandomMeme, getLocalRandomMeme } from '../dist';
 
 async function init() {
     try {
