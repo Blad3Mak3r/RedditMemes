@@ -45,6 +45,3 @@ function randomReddit(lang?: string | string[]): String {
             return subreddits.en[randomNumber(subreddits.en.length)];
     }
 }
-
-export * from './interfaces';
-export * from './utils';
