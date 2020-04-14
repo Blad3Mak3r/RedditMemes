@@ -32,15 +32,15 @@ function randomReddit(lang?: string | string[]): string {
 
   switch (lang.toString()) {
     case 'es':
-      return subreddits.es[randomNumber(subreddits.es.length)];
+      return subreddits['es'][randomNumber(subreddits['es'].length)];
     case 'fr':
-      return subreddits.fr[randomNumber(subreddits.fr.length)];
+      return subreddits['fr'][randomNumber(subreddits['fr'].length)];
     case 'de':
-      return subreddits.de[randomNumber(subreddits.de.length)];
+      return subreddits['de'][randomNumber(subreddits['de'].length)];
     case 'it':
-      return subreddits.it[randomNumber(subreddits.it.length)];
+      return subreddits['it'][randomNumber(subreddits['it'].length)];
     case 'ru':
-      return subreddits.ru[randomNumber(subreddits.ru.length)];
+      return subreddits['ru'][randomNumber(subreddits['ru'].length)];
     default:
       return subreddits.en[randomNumber(subreddits.en.length)];
   }
