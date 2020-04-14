@@ -16,7 +16,7 @@
     "typescript": "^3.8.3"
   },
   "scripts": {
-    "test": "ts-node examples/test.ts",
+    "test": "npm run build && ts-node examples/test.ts",
     "build": "tsc",
     "prepublish": "npm run build",
     "build:npm": "npm publish --access public"
