@@ -1,9 +1,10 @@
 {
   "name": "@blad3mak3r/reddit-memes",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "dist/index.js",
-  "types": "dist/**/*.d.ts",
+  "types": "dist/index.d.ts",
+  "files": ["dist/**/*"],
   "dependencies": {
     "axios": "^0.19.2"
   },
@@ -16,7 +17,8 @@
   "scripts": {
     "test": "ts-node examples/test.ts",
     "build": "tsc",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "publish": "npm publish --access public"
   },
   "repository": {
     "type": "git",
