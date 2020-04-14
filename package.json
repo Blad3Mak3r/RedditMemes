@@ -1,23 +1,38 @@
 {
   "name": "@blad3mak3r/reddit-memes",
   "version": "0.1.4",
-  "keywords": ["reddit", "random", "meme", "memes", "reddit-memes", "typescript", "async"],
+  "keywords": [
+    "reddit",
+    "random",
+    "meme",
+    "memes",
+    "reddit-memes",
+    "typescript",
+    "async"
+  ],
   "description": "",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": ["dist/**/*"],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
   "dependencies": {
     "axios": "^0.19.2"
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",
     "@types/node": "^13.11.1",
+    "prettier": "^2.0.4",
     "ts-node": "^8.8.2",
+    "tslint": "^6.1.1",
+    "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.8.3"
   },
   "scripts": {
     "test": "npm run build && ts-node examples/test.ts",
     "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json",
     "prepublish": "npm run build",
     "build:npm": "npm publish --access public"
   },
