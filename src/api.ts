@@ -41,6 +41,8 @@ function randomReddit(lang?: string | string[]): String {
             return subreddits.de[randomNumber(subreddits.de.length)];
         case "it":
             return subreddits.it[randomNumber(subreddits.it.length)];
+        case "ru":
+            return subreddits.it[randomNumber(subreddits.ru.length)];
         default:
             return subreddits.en[randomNumber(subreddits.en.length)];
     }
