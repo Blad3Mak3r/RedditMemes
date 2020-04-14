@@ -21,11 +21,14 @@ export async function buildMeme(url: string) {
         post = children[randomNumber(children.length)].data;
       }
 
-      return new Meme(post);
+      const meme = new Meme(post);
+
+      if (meme === null) throw new Error("Null post");
+      return meme;
     } else {
       throw new Error('Cannot get memes Yaiks...');
     }
   } catch (e) {
-    throw e;
+    throw new Error(e);
   }
 }
