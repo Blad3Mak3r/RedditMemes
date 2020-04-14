@@ -1,6 +1,6 @@
 {
   "name": "@blad3mak3r/reddit-memes",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "keywords": ["reddit", "random", "meme", "memes", "reddit-memes", "typescript", "async"],
   "description": "",
   "main": "dist/index.js",
