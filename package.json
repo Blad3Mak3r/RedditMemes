@@ -14,8 +14,9 @@
     "typescript": "^3.8.3"
   },
   "scripts": {
-    "dev": "ts-node examples/test.ts",
-    "prepublish": "tsc"
+    "test": "ts-node examples/test.ts",
+    "build": "tsc",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
