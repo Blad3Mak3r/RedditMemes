@@ -33,7 +33,7 @@
     "typescript": "^3.8.3"
   },
   "scripts": {
-    "examples": "npm run build && ts-node examples/index.ts",
+    "examples": "rimraf ./lib && tsc && ts-node examples/index.ts",
     "test": "jest --config jest.json",
     "prebuild": "rimraf ./lib && npm run test",
     "build": "tsc",

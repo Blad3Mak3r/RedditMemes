@@ -33,7 +33,12 @@ npm run build
 npm run test
 ```
 
-### **5.** Build the project
+### **6.** Run the examples the project.
+```shell script
+npm run examples
+```
+
+### **7.** Build the project
 ```shell script
 npm run build
 ```
