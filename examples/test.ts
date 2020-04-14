@@ -10,9 +10,9 @@ async function init() {
         console.table(await getRandomMeme("anime"));
         console.log("\n========================================");
         console.log("=     Gettin Random Spongebob Meme     =");
-        console.table(await getRandomMeme("spongebob"));
+        console.table(await getRandomMeme("BikiniBottomTwitter"));
         console.log("\n========================================");
-        console.log("=     Gettin Spanish Spongebob Meme     =");
+        console.log("=      Gettin Random Spanish Meme      =");
         console.table(await getLocalRandomMeme("es"));
     } catch(e) {
         throw e;
