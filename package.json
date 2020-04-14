@@ -1,6 +1,7 @@
 {
   "name": "@blad3mak3r/reddit-memes",
-  "version": "0.1.1",
+  "version": "0.1.2",
+  "keywords": ["reddit", "random", "meme", "memes", "reddit-memes", "typescript", "async"],
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -18,7 +19,7 @@
     "test": "ts-node examples/test.ts",
     "build": "tsc",
     "prepublish": "npm run build",
-    "publish": "npm publish --access public"
+    "build:npm": "npm publish --access public"
   },
   "repository": {
     "type": "git",
