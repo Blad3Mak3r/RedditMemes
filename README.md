@@ -1,13 +1,15 @@
 # Reddit Memes 
+
+### A small async wrapper to get reddit memes ``(post with images)`` from the best Reddits memes, this project is actively used as API by [HUGE](https://huge.blademaker.tv) in [HugeMemesAPI](https://memes.blademaker.tv)
+
+
 [![npm](https://img.shields.io/npm/v/@blad3mak3r/reddit-memes?style=for-the-badge)](https://www.npmjs.com/package/@blad3mak3r/reddit-memes)
 [![GitHub top language](https://img.shields.io/github/languages/top/blad3mak3r/redditmemes?style=for-the-badge)](https://github.com/Blad3Mak3r/RedditMemes/search?l=TypeScript&type=Code)
 [![GitHub](https://img.shields.io/github/license/blad3mak3r/redditmemes?style=for-the-badge)](https://github.com/Blad3Mak3r/RedditMemes/blob/master/LICENSE)
 [![Website](https://img.shields.io/website?down_color=black&down_message=Down&style=for-the-badge&up_color=green&up_message=Online&url=https%3A%2F%2Fmemes.blademaker.tv)](https://memes.blademaker.tv)
 
-
-### A small async wrapper to get reddit memes ``(post with images)`` from the best Reddits memes
-
-# How to install
+# Getting started
+## How to install
 Inside your npm project run the following command
 ```shell script
 npm install @blad3mak3r/reddit-memes --save
@@ -17,7 +19,7 @@ Or
 npm i -S @blad3mak3r/reddit-memes
 ```
 
-# Compile and test it yourself
+## Compile and test it yourself
 ### **1.** [Fork](https://github.com/Blad3Mak3r/RedditMemes/fork) this repository.
 
 ### **2.** Clone your repository.
@@ -39,15 +41,12 @@ npm run build
 npm run test
 ```
 
-### **6.** Run the examples the project.
+### **6.** Run the examples.
 ```shell script
 npm run examples
 ```
 
-### **7.** Build the project
-```shell script
-npm run build
-```
+### **7.** Enjoy
 
 ### You can see how this project works by watching the [live demo](https://memes.blademaker.tv/api).
 
