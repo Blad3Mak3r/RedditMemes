@@ -1,5 +1,5 @@
 # Reddit Memes 
-![npm](https://img.shields.io/npm/v/@blad3mak3r/reddit-memes?style=for-the-badge)
+[![npm](https://img.shields.io/npm/v/@blad3mak3r/reddit-memes?style=for-the-badge)](https://www.npmjs.com/package/@blad3mak3r/reddit-memes)
 ![GitHub top language](https://img.shields.io/github/languages/top/blad3mak3r/redditmemes?style=for-the-badge)
 ![GitHub](https://img.shields.io/github/license/blad3mak3r/redditmemes?style=for-the-badge)
 ![Website](https://img.shields.io/website?down_color=black&down_message=Down&style=for-the-badge&up_color=green&up_message=Online&url=https%3A%2F%2Fmemes.blademaker.tv)
