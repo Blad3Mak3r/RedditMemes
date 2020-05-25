@@ -7,6 +7,7 @@ export class Meme {
   readonly ups: number;
   readonly downs: number;
   readonly score: number;
+  readonly comments: number;
   readonly nsfw: boolean;
   readonly createdUtc: bigint;
 
@@ -19,6 +20,7 @@ export class Meme {
     this.ups = content.ups;
     this.downs = content.downs;
     this.score = content.score;
+    this.comments = content.num_comments;
     this.nsfw = content.over_18;
     this.createdUtc = content.created_utc;
   }
