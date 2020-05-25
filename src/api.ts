@@ -1,6 +1,4 @@
-import Axios from 'axios';
-import { randomNumber, checkURL, buildMeme } from './utils';
-import { Meme } from './interfaces/meme';
+import { randomNumber, buildMeme } from './utils';
 
 const subreddits = {
   en: ['memes', 'dankmemes', 'meirl'],
