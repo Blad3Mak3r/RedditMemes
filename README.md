@@ -2,6 +2,13 @@
 
 ### A small async wrapper to get reddit memes ``(post with images)`` from the best Reddits memes, this project is actively used as API by [HUGE](https://huge.blademaker.tv) in [HugeMemesAPI](https://memes.blademaker.tv)
 
+You can also get this package for other programming languages:
+
+| Packages                                               |
+|--------------------------------------------------------|
+| [Java](https://github.com/Blad3Mak3r/RedditMemesJava)  |
+| [TS/JS](https://github.com/Blad3Mak3r/RedditMemes)     |
+
 
 [![npm](https://img.shields.io/npm/v/@blad3mak3r/reddit-memes?style=for-the-badge)](https://www.npmjs.com/package/@blad3mak3r/reddit-memes)
 [![GitHub top language](https://img.shields.io/github/languages/top/blad3mak3r/redditmemes?style=for-the-badge)](https://github.com/Blad3Mak3r/RedditMemes/search?l=TypeScript&type=Code)
