@@ -6,7 +6,7 @@ You can also get this package for other programming languages:
 
 | Packages                                               |
 |--------------------------------------------------------|
-| [Java](https://github.com/Blad3Mak3r/RedditMemesJava)  |
+| [Java](https://github.com/Blad3Mak3r/Memes4J)  |
 | [TS/JS](https://github.com/Blad3Mak3r/RedditMemes)     |
 
 
