@@ -18,7 +18,7 @@
     "lib/**/*"
   ],
   "dependencies": {
-    "axios": "^0.19.2"
+    "axios": "^0.20.0"
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",
