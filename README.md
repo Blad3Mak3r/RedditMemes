@@ -6,8 +6,9 @@ You can also get this package for other programming languages:
 
 | Packages                                               |
 |--------------------------------------------------------|
-| [Java](https://github.com/Blad3Mak3r/Memes4J)  |
-| [TS/JS](https://github.com/Blad3Mak3r/RedditMemes)     |
+| [Java](https://github.com/Blad3Mak3r/Memes4J)          |
+| [Node.js](https://github.com/Blad3Mak3r/RedditMemes)   |
+| [Deno](https://github.com/Blad3Mak3r/DenoMemes)        |
 
 
 [![npm](https://img.shields.io/npm/v/@blad3mak3r/reddit-memes?style=for-the-badge)](https://www.npmjs.com/package/@blad3mak3r/reddit-memes)
