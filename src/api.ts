@@ -12,20 +12,24 @@ const subreddits = {
   "tr": ['burdurland', 'TurkeyJerky', 'TurkishMemeCommunity'],
 };
 
+export interface SearchFilter {
+  allowNSFW: boolean
+}
+
 /**
  * Fetch a single random meme from top reddits or your selecter subreddit
  * @param subreddit A subreddit name
  */
-export async function getRandomMeme(subreddit?: string) {
+export async function getRandomMeme(subreddit?: string, searchFilter?: SearchFilter) {
   const url = `https://www.reddit.com/r/${subreddit ? subreddit : randomReddit()}/hot/.json?count=100`;
 
-  return await buildMeme(url);
+  return await buildMeme(url, searchFilter);
 }
 
-export async function getLocalRandomMeme(country: 'en' | 'es' | 'fr' | 'ru' | 'de' | 'it') {
+export async function getLocalRandomMeme(country: 'en' | 'es' | 'fr' | 'ru' | 'de' | 'it', searchFilter?: SearchFilter) {
   const url = `https://www.reddit.com/r/${randomReddit(country)}/hot/.json?count=100`;
 
-  return await buildMeme(url);
+  return await buildMeme(url, searchFilter);
 }
 
 function randomReddit(lang?: string | string[]): string {

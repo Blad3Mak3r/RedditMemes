@@ -1,5 +1,6 @@
-import { Meme } from './interfaces/meme';
 import Axios from 'axios';
+import { Meme } from './interfaces/meme';
+import { SearchFilter } from './api';
 
 export function randomNumber(nm: number): number {
   return Math.floor(Math.random() * nm);
@@ -9,7 +10,9 @@ export function checkURL(url: string): boolean {
   return url.match(/\.(jpeg|jpg|gif|png)$/) != null;
 }
 
-export async function buildMeme(url: string) {
+export async function buildMeme(url: string, searchFilter?: SearchFilter) {
+  const allowNsfw = searchFilter?.allowNSFW ?? true
+
   try {
     const result = await Axios.get(url);
 
@@ -18,13 +21,16 @@ export async function buildMeme(url: string) {
       let post = children[randomNumber(children.length)].data;
       let trys: number = 0;
 
-      while (!checkURL(post.url)) {
+      let validPost = false
+
+      while (!validPost) {
         post = children[randomNumber(children.length)].data;
         if (trys >= 50) {
-          throw new Error('Cannot get image post from '+url)
-          break;
+          throw new Error('Cannot get image post from '+url);
         }
         trys++;
+        if (post.over_18 && !allowNsfw) continue
+        validPost = checkURL(post.url)
       }
 
       const meme = new Meme(post);
@@ -35,6 +41,6 @@ export async function buildMeme(url: string) {
       throw new Error('Cannot get image post from '+url);
     }
   } catch (e) {
-    throw new Error(e);
+    throw e;
   }
 }
