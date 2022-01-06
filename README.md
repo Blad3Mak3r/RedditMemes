@@ -79,6 +79,17 @@ getRandomMeme().then(console.info).catch(console.error);
 getRandomMeme("memes").then(console.info).catch(console.error);
 ```
 
+## Filter NSFW posts (by default allowNSFW is set to false)
+```TypeScript
+// Prevent NSFW
+getRandomMeme("meme", { allowNSFW: false }).then(console.log).catch(console.error);
+
+// Prevent NSFW
+getLocalRandomMeme("es", { allowNSFW: false }).then(console.info).catch(console.error);
+
+getRandomMeme(/* some NSFW reddit */, { allowNSFW: true }).then(console.info).catch(console.error);
+```
+
 ## Get country based random meme ``Async/Await``
 > The country codes supported at the moment are ``en``, ``es``, ``fr``, ``ru``, ``de``, ``it``.
 ```TypeScript
