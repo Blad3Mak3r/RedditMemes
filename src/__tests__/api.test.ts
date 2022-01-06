@@ -15,7 +15,6 @@ test('Filter NSFW meme', async () => {
     try {
         const meme = await getRandomMeme("rule34", { allowNSFW: false })
         expect(meme).toBeInstanceOf(Meme);
-        console.info(meme)
         if (meme) expect(meme.nsfw).toBe(false);
     } catch(e) {
         expect(e).toBeInstanceOf(Error)
