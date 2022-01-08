@@ -9,6 +9,10 @@ test('Get random meme (with setted allowNSFW to false)', async () => {
     expect(await getRandomMeme("memes", { allowNSFW: false })).toBeInstanceOf(Meme);
 })
 
+test('Get random meme (with setted allowNSFW to false and undefined reddit)', async () => {
+    expect(await getRandomMeme(undefined, { allowNSFW: false })).toBeInstanceOf(Meme);
+})
+
 test('Get NSFW meme', async () => {
     const meme = await getRandomMeme("rule34", { allowNSFW: true })
     expect(meme).toBeInstanceOf(Meme);
