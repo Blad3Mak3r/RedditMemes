@@ -36,7 +36,7 @@
   "scripts": {
     "examples": "rimraf ./lib && tsc && ts-node examples/index.ts",
     "test": "jest --config jest.json",
-    "prebuild": "rimraf ./lib && npm run test",
+    "prebuild": "rimraf ./lib",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json",
