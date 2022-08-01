@@ -108,5 +108,3 @@ dist
 lib/
 dist/
 build/
-
-package-lock.json
