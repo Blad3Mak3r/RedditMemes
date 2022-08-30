@@ -1,6 +1,6 @@
 # Reddit Memes 
 
-### A small async wrapper to get reddit memes ``(post with images)`` from the best Reddits memes, this project is actively used as API by [HUGE](https://huge.blademaker.tv) in [HugeMemesAPI](https://memes.blademaker.tv)
+### A small async wrapper to get reddit memes ``(post with images)`` from the best Reddits memes, this project is actively used as API by [HUGE](https://hugebot.net) in [Deno Memes V2 API](https://memes-v2.blademaker.tv)
 
 You can also get this package for other programming languages:
 
